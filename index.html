@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kaori Academia</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css"> -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300;400;500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Tourney:wght@200&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+   <link rel="shortcut icon" href="img/favicon_io/favicon.ico">
+  <script src="https://kit.fontawesome.com/b86f3f2ff1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+
+		<a href="#home" class="logo-container"><img src="img/mascara-kitsune_freepk.png" alt="Kaori Academia" class="logo-icon"></a>
+
+			<nav class="mobile-navigation">
+				<ul class="mobile-ul">
+					<li class="mobile-li"><a href="#">Oficinas</a>
+						<ul class="mobile-submenu">
+							<li><a href="#">Valencia</a></li>
+							<li><a href="#">Caracas</a></li>
+							<li><a href="#">Maracay</a></li>
+							<li><a href="#">San Diego</a></li>
+						</ul>
+					</li>
+
+					<li class="mobile-li"><a href="#">Promociones</a></li>
+
+					<li class="mobile-li"><a href="#">Nosotros</a>
+						<ul class="mobile-submenu">
+							<li><a href="#">Contáctanos</a></li>
+							<li><a href="#" class="error-reporter">Reportar problema</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="mob-buttons">
+				<a href="#"><i class="fas fa-cart-plus  cart-btn-mob  carrito-mob-btn active"></i></a>
+				<div class="ham-btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+
+
+		<div class="nav-container"> <!-- BARRA DE NAVEGACIÓN -->
+			<nav class="navegation">
+				<ul class="navegation-ul">
+					<li class="navegation_li-ul"><a href="#">Oficinas</a>
+						<ul class="navegation--ul">
+							<li class="navegation__li-ul"><a href="#">Valencia</a></li>
+							<li class="navegation__li-ul"><a href="#">Caracas</a></li>
+							<li class="navegation__li-ul"><a href="#">Maracay</a></li>
+							<li class="navegation__li-ul"><a href="#">San Diego</a></li>
+						</ul>
+					</li>
+
+					<li class="navegation_li-ul"><a href="#">Promociones</a></li>
+
+					<li class="navegation_li-ul"><a href="#">Nosotros</a>
+						<ul class="navegation--ul">
+							<li class="navegation__li-ul"><a href="#">Sobre nosotros</a></li>
+							<li class="navegation__li-ul"><a href="#">Contáctanos</a></li>
+							<li class="navegation__li-ul"><a href="#">Reportar un problema</a></li>
+						</ul>
+					</li>
+					<li class="navegation_li-ul"><a href="#" class="carrito-btn"><i class="fas fa-cart-plus  cart-btn"></i></a></li>
+				</ul>
+			</nav>
+		</div>
+
+			<div id="carrito">
+                    <table id="lista-carrito" class="u-full-width">
+                        <thead>
+                         	<tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th class="delete-btn"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="cursos-container"></tbody>
+                    </table>
+
+                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+            </div>
+
+	</header>
+
+	<main class="main-content">
+		<section class="hero">
+			<div class="hero-container"> <!-- HERO -->
+				<div class="banner-img">
+					<img src="img/hero1.jpg" alt="Pizza, Planet Pizza">
+				</div>
+				<div class="banner-info">
+					<h1 class="headline-hero">¡Encuentra los mejores cursos de cocina de <strong>TODA</strong> la web!</h1>
+
+					<form class="formulario formulario-buscar" id="formulario"> <!-- BARRA DE BUSQUEDA -->
+						<input type="search" name="busqueda" class="busqueda" placeholder="Cocina mexicana, Cocina japonesa, Cocina china..."><br>
+                		<input type="submit" value="Buscar" id="btn-submit">
+					</form> 
+				</div>
+			</div>
+		</section>
+
+		<section class="cards"> <!-- SECCIÓN CURSOS -->
+			<h2>Explora nuestros cursos</h2><br>
+			<div class="card  one">
+				<div class="card-info">
+					<p class="card-category">CURSOS</p>
+					<p class="course-info">Cocina Americana (8 clases)</p>
+					<img src="img/american.jpg" alt="Hamburguesas" class="course-img">
+					<p class="price-info">$60</p>
+					<a href="#" class="buy-btn" data-id="1">Comprar</a>
+				</div>
+			</div>
+
+			<div class="card  two">
+				<div class="card-info">
+					<p class="card-category">CURSOS</p>
+					<p class="course-info">Cocina Japonesa (12 clases)</p>
+					<img src="img/japanese.jpg" alt="Sushi" class="course-img">
+					<p class="price-info">$110</p>
+					<a href="#" class="buy-btn" data-id="2">Comprar</a>
+				</div>	
+			</div>
+
+			<div class="card  three">
+				<div class="card-info">
+					<p class="card-category">CURSOS</p>
+					<p class="course-info  spc">Cocina Griega (10 clases)</p>
+					<img src="img/greek.jpg" alt="Ensalada de langostinos" class="course-img">
+					<p class="price-info">$90</p>
+					<a href="#" class="buy-btn" data-id="3">Comprar</a>
+				</div>
+			</div>
+
+			<div class="card  four">
+				<div class="card-info">
+					<p class="card-category">CURSOS</p>
+					<p class="course-info  spc">Cocina Mexicana (8 clases)</p>
+					<img src="img/mexican.jpg" alt="Enchiladas" class="course-img">
+					<p class="price-info">$60</p>
+					<a href="#" class="buy-btn" data-id="4">Comprar</a>
+				</div>
+			</div>
+
+			<div class="card  five">
+				<div class="card-info">
+					<p class="card-category">CURSOS</p>
+					<p class="course-info">Cocina China (14 clases)</p>
+					<img src="img/chinese.jpg" alt="Fideos" class="course-img">
+					<p class="price-info">$140</p>
+					<a href="#" class="buy-btn" data-id="5">Comprar</a>
+				</div>
+			</div>
+
+			<div class="card  six">
+				<div class="card-info">
+					<p class="card-category">CURSOS</p>
+					<p class="course-info">Cocina Española (10 clases)</p>
+					<img src="img/spanish.jpg" alt="Paella" class="course-img">
+					<p class="price-info">$90</p>
+					<a href="#" class="buy-btn" data-id="6">Comprar</a>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="premium-promo"> <!-- SECCIÓN DE PROMOCIONES -->
+			<img src="img/announcement.jpg" alt="Anuncio de promociones">
+			<div class="promo">
+				<h3 class="promo-headline">¿Interesado en nuestros cursos?</h3>
+				<p class="promo-info">¡Consigue las mejores promociones aquí!</p>
+				<a href="#" class="show_more-btn">Ver más</a>
+			</div>
+		</section>
+
+	</main>
+
+	<button id="foot-btn">Menú</button>
+
+	<footer id="footer" class="footer"> <!-- FOOTER -->
+		<div class="footer-container"> 
+
+			<div class="our-info">
+				<h5>Hecho con mucho <i class="far fa-heart" style="color: #a60303;"></i></h5><br><br>
+				<p class="info-footer">Nos enfocamos en brindar educación de calidad en el área gastronómica, nuestros programas están enfocados para todos los públicos porque que deseamos compartir nuestra pasión por la buena Cocina.</p>
+			</div>
+
+			<div class="social-media">
+				<nav class="sociales">
+                    <a href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #a60303;"></i></a>
+                    <a href="http://github.com" target="_blank"><i class="fa-brands fa-github-alt" style="color: #a60303;"></i></a>
+                    <a href="http://instagram.com" target="_blank"><i class="fa-brands fa-instagram" style="color: #a60303;"></i></a>
+                </nav>
+			</div>
+
+			<div class="contact">
+				<address>Sunshine Street, Valencia, Venezuela</address>
+				<h6>Todos los derechos reservados &copy; 2021</h6>				
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
